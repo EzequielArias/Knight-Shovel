@@ -1,0 +1,77 @@
+.container-activities span,
+.container-activities p,
+.container-activities h3{
+    color: white;
+    margin: 20px 20px 20px 20px;
+    letter-spacing: normal;
+}
+.container-activities span{
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.container-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: black;
+}
+.activities-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    position: relative;
+}
+.activities-container_images {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.activities-container_images img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    transition: 1s ease;
+}
+
+.arrows {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+.skin_img{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.skin_img img {
+    object-fit: cover;
+    width: 300px;
+    height: 150px;
+    transition: 1s ease;
+}
+
+.gallery__arrow-icon {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 15px;
+}

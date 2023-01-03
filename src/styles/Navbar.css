@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    box-shadow: -0.00px -1.00px 4px 5px rgba(207,119,0,1);
+}
+.container-nav img {
+    width: 80px;
+}
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+header i {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+nav a{
+    margin : 0 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+    border-bottom: 2px solid orange;
+}
+
+.container-nav .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+/*Codigo a ejecutar cuando la pantalla mide menos de 1024px*/
+@media only screen and (max-width: 1024px){
+    .container-nav .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+    /* la propiedad transform es la que afecta el listado responsive*/
+    .nav-res {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        gap: 1.5rem;
+        transition: 1s;
+        background-color: black;
+        transform: translateY(-200vh);
+    }
+
+    .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top:2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}

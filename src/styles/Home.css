@@ -1,0 +1,42 @@
+.container-home{
+    background-color: black;
+}
+.portada {
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    top: -480px;
+    left: 400px;
+    font-size: 72px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+}
+.title span {
+    position:relative;
+    left: 70px;
+}
+.subTitle{
+    position: relative;
+    top:-480px; 
+    left: 450px;
+    font-size: 20px;
+    width: 50%;
+    margin: 0px !important;
+    color: white;
+}
+.history-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: -170px;
+    font-size: 15px;
+    color: white;
+}
+.history-container h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+}

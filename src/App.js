@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Leaders from './pages/Leaders';
+import Rules from './pages/Rules';
+import Faq from './pages/Faq';
+import Activities from './pages/Activities';
+import Navbar from '../src/components/Navbar/Navbar'
+
+//https://shovelknights.wixsite.com/wolvesville
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/leaders' element={<Leaders/>}/>
+        <Route path='/rules' element={<Rules/>}/>
+        <Route path='/faq' element={<Faq/>}/>
+        <Route path='/activities' element={<Activities/>}/>
+      </Routes>
+    </BrowserRouter>
+    );
 }
 
 export default App;
