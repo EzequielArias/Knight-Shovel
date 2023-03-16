@@ -25,9 +25,8 @@ const Home = () => {
     return (
         <div className='container-home'>  
         <img className='portada' src={portada} alt='portada'></img>
-        <span className='title'>Shovel Knights<br/> 
-                   <span>te da la</span><br/> 
-        bienvenida</span>
+        <h2>Shovel Knights</h2>
+        <h3>Te da la bienvenida</h3>
         <p className='subTitle'>Más que un clan, una hermandad<br/>¡Nuestra vida por la pala!</p>
             <div className='history-container'>
             <h2 >La historia de Shovel Knights</h2>

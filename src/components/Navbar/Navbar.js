@@ -21,7 +21,6 @@ const Navbar = () => {
             <Link to={'/rules'}>Reglas</Link>
             <Link to={'/leaders'}>Lideres</Link>
             <Link to={'/activities'}>Actividades</Link>
-            <Link to={'/faq'}>FAQ's</Link>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
               <FaTimes/>
             </button>

@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Leaders from './pages/Leaders';
 import Rules from './pages/Rules';
-import Faq from './pages/Faq';
 import Activities from './pages/Activities';
 import Navbar from '../src/components/Navbar/Navbar'
 
@@ -17,7 +16,6 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/leaders' element={<Leaders/>}/>
         <Route path='/rules' element={<Rules/>}/>
-        <Route path='/faq' element={<Faq/>}/>
         <Route path='/activities' element={<Activities/>}/>
       </Routes>
     </BrowserRouter>
